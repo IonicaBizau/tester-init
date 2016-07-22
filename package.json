@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "test": "node /home/ionicabizau/Documents/tester-init/test/index.js"
-  },
   "name": "tester-init",
   "description": "Init tests for tester.",
   "keywords": [

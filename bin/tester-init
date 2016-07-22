@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+const Tilda = require("tilda")
+    , testerInit = require("..")
+    , log = require("emoji-logger")
+    ;
+
+new Tilda(`${__dirname}/../package.json`, {
+    options: [
+        {
+            name: "path"
+          , default: "test/index.js"
+          , description: "The test file path."
+          , opts: ["p", "path"]
+          , type: String
+        }
+    ]
+}).main(a => {
+    log("Initializing tester in your project.");
+    testerInit(".", {
+        path: a.options.path
+    }, err => {
+        if (err) { return log(err, "error"); }
+        log("Success!");
+    });
+});

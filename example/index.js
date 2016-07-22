@@ -2,4 +2,6 @@
 
 const testerInit = require("../lib");
 
-console.log(testerInit());
+testerInit(`${__dirname}/..`, err => {
+    console.log(err || "Success.");
+});

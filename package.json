@@ -7,6 +7,9 @@
     "tests",
     "for"
   ],
+  "bin": {
+    "tester-init": "./bin/tester-init"
+  },
   "license": "MIT",
   "version": "1.0.0",
   "main": "lib/index.js",
@@ -42,5 +45,12 @@
     "ul": "^5.2.2",
     "w-package-json": "^1.1.2",
     "write-file-p": "^1.0.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

@@ -2,13 +2,14 @@
 
 You can see below the API reference of this module.
 
-### `testerInit(a, b)`
+### `testerInit(dir, opts, cb)`
 Init tests for tester.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+- **String** `dir`: The dir path.
+- **Object** `opts`: An object containing:
+ - `path` (String): The test script name (default: `test/index.js`)
+- **Function** `cb`: The callback function.
 
-#### Return
-- **Number** Return description.
+...
 

@@ -1,5 +1,5 @@
 
-# tester-init
+# `$ tester-init`
 
  [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/tester-init.svg)](https://www.npmjs.com/package/tester-init) [![Downloads](https://img.shields.io/npm/dt/tester-init.svg)](https://www.npmjs.com/package/tester-init) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
@@ -7,35 +7,53 @@
 
 ## :cloud: Installation
 
+You can install the package globally and use it as command line tool:
+
+
 ```sh
-$ npm i --save tester-init
+$ npm i -g tester-init
 ```
 
 
+Then, run `tester-init --help` and see what the CLI tool can do.
+
+
+```
+$ tester-init --help
+Usage: tester-init [options]
+
+Init tests for tester.
+
+Options:
+  -p, --path <path>  The test file path.
+  -v, --version      Displays version information.
+  -h, --help         Displays this help.
+
+Documentation can be found at https://github.com/IonicaBizau/tester-init#readme.
+```
+
 ## :clipboard: Example
+
+
+Here is an example how to use this package as library. To install it locally, as library, you can do that using `npm`:
+
+```sh
+$ npm i --save tester-init
+```
 
 
 
 ```js
 const testerInit = require("tester-init");
 
-console.log(testerInit());
+testerInit(`${__dirname}/..`, err => {
+    console.log(err || "Success.");
+});
 ```
 
 ## :memo: Documentation
 
-
-### `testerInit(a, b)`
-Init tests for tester.
-
-#### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
-
-#### Return
-- **Number** Return description.
-
-
+For full API reference, see the [DOCUMENTATION.md][docs] file.
 
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].

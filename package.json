@@ -1,6 +1,9 @@
 {
   "name": "tester-init",
   "description": "Init tests for tester.",
+  "blah": {
+    "description": "This module will install and create a starter test using [`tester`](https://github.com/IonicaBizau/tester) in your module."
+  },
   "keywords": [
     "tester",
     "init",

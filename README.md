@@ -5,6 +5,8 @@
 
 > Init tests for tester.
 
+This module will install and create a starter test using [`tester`](https://github.com/IonicaBizau/tester) in your module.
+
 ## :cloud: Installation
 
 You can install the package globally and use it as command line tool:

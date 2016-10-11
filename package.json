@@ -14,13 +14,14 @@
     "tester-init": "./bin/tester-init"
   },
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "lib/index.js",
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "files": [
     "bin/",
     "app/",
     "lib/",
+    "build/",
     "dist/",
     "src/",
     "resources/",

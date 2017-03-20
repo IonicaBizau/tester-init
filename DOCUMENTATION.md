@@ -11,7 +11,3 @@ Init tests for tester.
  - `path` (String): The test script name (default: `test/index.js`)
 - **Function** `cb`: The callback function.
 
-...
-
-...
-

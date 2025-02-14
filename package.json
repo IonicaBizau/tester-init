@@ -14,7 +14,7 @@
     "tester-init": "./bin/tester-init"
   },
   "license": "MIT",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "lib/index.js",
   "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "files": [
@@ -28,6 +28,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
